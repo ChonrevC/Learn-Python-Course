@@ -1,0 +1,25 @@
+# Modules let us access functions and variables that we create in another python file
+
+# Done by the "import" keyword (.py extension not needed)
+# Here, usefulTools is a .py module we created ourselves
+# There are other external modules & built-in modules that we can use
+
+import usefulTools
+
+print(usefulTools.roll_dice(10))
+
+
+##################################################
+# HOW TO INSTALL EXTERNAL/3RD PARTY MODULES (pip):
+'''
+Pip is a package manager that lets us install/update/uninstall python modules
+    Some versions have it pre-installed, but some versions don't have it
+    - Can check on Command Prompt with "pip --version"
+    To install pip, type "pip install python-docx"
+    - "python-docx" can be replaced with any module we want to install
+    To then use the module, in the editor, type "import docx"
+    
+    To uninstall a module, in command prompt, type "pip uninstall python-docx"
+    - again, "python-docx" can be replaced with any module we want to uninstall
+'''
+
