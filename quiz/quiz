@@ -1,0 +1,42 @@
+
+
+# Questions have 2 parts to them:
+#   The question
+#   The answer
+# So for questions, we can create a question class
+
+from question import Question
+
+# Create a list containing the questions
+question_prompts = [
+    "What color are apples?\n(a) Red/Green\n(b) Purple\n\n",
+    "What color are bananas?\n(a) Teal\n(b) Yellow\n\n",
+    "What color are strawberries?\n(a) Yellow\n(b) Red\n\n"
+]
+
+# Create a list of questions containing the question and answer for each question
+# def __init__(self, prompt, answer):
+questions = [
+    Question(question_prompts[0], "a"),
+    Question(question_prompts[1], "b"),
+    Question(question_prompts[2], "b")
+    # To create another question, just add in a question here
+]
+
+
+
+def run_test(questions):
+    
+    score = 0
+    for question in questions:
+        
+        answer = input(question.prompt)
+        print()
+
+        if answer == question.answer:
+            score += 1
+
+    print("You got " + str(score) + "/" + str(len(questions)) + " correct!\n")
+
+run_test(questions)
+
