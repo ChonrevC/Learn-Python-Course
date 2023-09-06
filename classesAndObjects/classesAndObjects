@@ -1,0 +1,16 @@
+# built-in data types can't represent some real world objects, like computers or phones or machines
+# With Classes and Objects, we can create our own data types for these, each with their own functions!
+
+# Say, we want to represent a student
+# First, we create a new file ("student.py") with the Student class
+
+# from student.py, import class Student
+from student import Student
+
+# Recall class init being: def __init__(self, name, major, gpa, is_on_probation)
+#student1 & 2 is the object that uses class Student
+student1 = Student("Jim", "Business", 3.1, False)
+student2 = Student("Pam", "Art", 2.5, True)
+
+# The . allows us to access attributes of an object
+print(student1.name)
