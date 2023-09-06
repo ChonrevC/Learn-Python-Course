@@ -1,0 +1,7 @@
+from student import Student
+
+student1 = Student("Lewis", "Art", 3.5, True)
+student2 = Student("Karen", "Business", 2.5, False)
+
+print(student1.on_honor_roll)
+print(student1.on_honor_roll)
