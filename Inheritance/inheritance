@@ -1,0 +1,17 @@
+# Inheritance is where we can define functions & attributes in 1 class, & have another class inherit these functions & attributes
+#   So that the new class doesn't need to recopy all these functions & attributes
+
+
+#This object models a generic chef, not a Chinese or Indian or American chef
+from chef import Chef
+
+myChef = Chef()
+myChef.make_special()
+
+
+
+# This object models a specific type of chef, a Chinese chef
+from chineseChef import ChineseChef
+
+myChef2 = ChineseChef()
+myChef2.make_special()
